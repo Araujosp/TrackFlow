@@ -30,6 +30,15 @@ body {
     font-size: var(--font-size);
 }
 
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #a200ff;
+    height: 100%;
+}
+
 input[type="text"] {
     outline: none;
     border: none;
@@ -239,31 +248,68 @@ h1,p,h2 {
 
 
 /*------------------------------------------------------------*/
-.menu{
+.menu {
+    margin-bottom: -1px;
     display: flex;
     padding: 1.25rem;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    box-shadow: 10px rgb(106, 0, 138);
-    border-bottom: 1px solid #aaaaaa;
+
+    /* 🔥 Degradê roxo + preto */
+    background: linear-gradient(135deg, #000000, #1a001f, #6a00ff);
+
+    /* 💎 acabamento */
+    box-shadow: 0 4px 20px rgba(106, 0, 255, 0.5);
+    border-bottom: 1px solid #a200ff;
+
+    color: white;
 }
 
-#logo-header{
-    height:200px;
+#logo-header {
+    height: 80px;
+}
+
+/* título */
+.title-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title-header h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* botão */
+.btn_cadastrar_produto {
+    background: #a200ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn_cadastrar_produto:hover {
+    background: #6a00ff;
+    transform: scale(1.05);
 }
 
 .btn_cadastrar_produto {
     padding: 16px;
     background-color: #000000;
-    color: rgb(189, 90, 19);
+    color: rgb(132, 0, 194);
     font-weight: 600;
     border-radius: 8px;
 }
 
 .btn_cadastrar_produto:hover {
-    background-color: rgb(189, 90, 19);
+    background-color: rgb(11, 169, 197);
     color: #000000;
 }
+/*--------------------------------------------- */
+
 
 h2 {
     font-weight: 800;
@@ -412,30 +458,6 @@ span{
 
 .lixo_icon {
     height: 20px;
-}
-
-
-#chama-o-dev{
-    color: #dfdfdf;
-}
-
-.menu img{
-    height:4rem;
-}
-
-.title-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.title-header img{
-    height: 2.5rem;
-}
-
-.title-header h2{
-    font-size: 1.3rem;
-    color: rgb(61, 61, 61);
 }
 
 .valor_total {

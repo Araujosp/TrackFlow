@@ -57,6 +57,9 @@
             </form>
         </section>
     </main>
+    <footer class ="footer">
+       <img src="imagens/logo-sem-fundo.png" alt="">
+    </footer>
 </body>
 
 </html>
