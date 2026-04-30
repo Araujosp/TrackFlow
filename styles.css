@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* azul =#0000FF laranja = #FFA500*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Inter, sans-serif;    
+}
+
+:root {
+    --font-size: 14px;
+    --font-principal: "Oswald", sans-serif;
+    --font-secundaria: Arial;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p {
+    font-size: var(--font-size);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    font-size: var(--font-size);
+}
+
+input[type="text"] {
+    outline: none;
+    border: none;
+}
+
+h1,p,h2 {
+    font-family: var(--font-principal);
+}
+
+
+/*-------------------------- Login --------------------------*/
+.body_login {
+    font-family: "Oswald", sans-serif;
+}
+
+.logo_login {
+    height: 150px;
+}
+
+.main_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo_login {
+    margin-bottom: 25px;
+    font-size: 35px;
+
+}
+
+.form_login {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input_login {
+    border: none;
+}
+
+.campo_input {
+    margin-top: 8px;
+    padding: 10px 8px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+
+.senha_font {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forget {
+    color: #000000;
+}
+
+.check_forget {
+    display: flex;
+    gap: 5px;
+}
+
+.forget:hover {
+    text-decoration: underline;
+    text-decoration-color: #000000;
+}
+
+.text {
+    font-weight: 300;
+    text-align: center;
+}
+
+.img_form {
+    height: 16px;
+}
+
+.btn_login {
+    background: #07003d;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    cursor: pointer;
+}
+
+.img_img {
+    height: 5px;
+}
+
+.btn_login {
+    padding: 8px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.divider {
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.text_divider {
+    color: #000000;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #000000;
+}
+
+.divider::before {
+    margin-right: 10px;
+}
+
+.divider::after {
+    margin-left: 10px;
+}
+
+.btn_solicitacao {
+    background: #ffffff;
+    border: 1px solid #aaaaaa;
+    color: #000000;
+}
+
+.btn_solicitacao:hover {
+    background: #e5e5e5;
+    border: 1px solid #ff7300;
+}
+
+.new_login {
+    color: #000000;
+    font-weight: 600;
+}
+
+.new_login:hover {
+    color: #ff7300;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: #ff7300;
+}
+
+/*------------------------------------------------------------*/
+
+/*-------------------------- Cadastro --------------------------*/
+
+
+.main_cad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.titulo_cad {
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card_cad {
+    padding: 30px;
+    width: 350px;
+    background-color: #ff7300;
+    border-radius: 8px;
+}
+
+.form_cad {
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: repeat(4,35px);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.campo_cad {
+    width: auto;
+    padding: 5px 15px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.campo_cad[contenteditable="true"]:focus {
+    border: 2px solid #000000;
+} 
+
+
+
+
+/*------------------------------------------------------------*/
+.menu{
+    display: flex;
+    padding: 1.25rem;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 10px rgb(106, 0, 138);
+    border-bottom: 1px solid #aaaaaa;
+}
+
+#logo-header{
+    height:200px;
+}
+
+.btn_cadastrar_produto {
+    padding: 16px;
+    background-color: #000000;
+    color: rgb(189, 90, 19);
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.btn_cadastrar_produto:hover {
+    background-color: rgb(189, 90, 19);
+    color: #000000;
+}
+
+h2 {
+    font-weight: 800;
+}
+
+main{
+    padding: 20px;
+}
+
+.main_index{
+    background-color: #000000;
+}
+
+#title_main{
+    text-align: center;
+    padding: 10px;
+    color: rgb(189, 90, 19);
+    text-align: left;
+}
+
+.filtro {
+    padding: 30px 0px 40px 30px;
+    background-color: #ffffff;
+    display: flex;
+    gap: 5px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.list_estoque {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.estoque {
+    background: #ffffff;
+    margin: 50px;
+    border: 1px solid #aaaaaa;
+    border-radius: 12px;    
+}
+
+table {
+    padding: 5px;
+    background-color: #ffff;
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+th, td {
+    font-size: var(--font-size);
+    padding: 15px;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+.linha_destaque {
+    color: #636363;
+}
+
+.negrito {
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+}
+
+.list_incluir_item {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.list_incluir_item input, select {
+    padding: 7px;
+    border-radius: 8px;
+}
+
+.formulario {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    width: 900px;
+    background: #f5f5f5;
+    padding: 25px;
+    border-radius: 10px;
+    gap: 15px;
+}
+
+.icon_operator {
+    height: 25px;
+}
+
+label {
+    font-weight: 600;
+}
+
+.form-grid {
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* cada campo */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* inputs */
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.full {
+    grid-column: span 3;
+}
+
+/* botão estilo */
+.btn {
+    background-color: #2d9cdb;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 250px;
+}
+
+.btn:hover {
+    background-color: #238ac7;
+}
+
+span{
+    color: blue;
+    font-weight: bold;
+}
+
+.lixo_icon {
+    height: 20px;
+}
+
+
+#chama-o-dev{
+    color: #dfdfdf;
+}
+
+.menu img{
+    height:4rem;
+}
+
+.title-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-header img{
+    height: 2.5rem;
+}
+
+.title-header h2{
+    font-size: 1.3rem;
+    color: rgb(61, 61, 61);
+}
+
+.valor_total {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.crementos{
+    font-size: 8px;
+}
+
+.resultado_estoque {
+    display: flex;
+}
+
+.status{
+    padding: 5px;
+    background-color: rgb(62, 0, 104);
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+}
